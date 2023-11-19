@@ -8,9 +8,19 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 75px;
     background: #eaeaea;
 }
+
+.nav-menu {
+    list-style-type: "";
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+
 
 .button-3D-effect {
     display: block;
@@ -53,5 +63,5 @@ body {
 }
 
 .button-3D-effect:hover span {
-    transform: rotateX(90deg);
+    transform: rotateX(90deg) translateY(-50%);
 }

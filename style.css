@@ -65,3 +65,33 @@ body {
 .button-3D-effect:hover span {
     transform: rotateX(90deg) translateY(-50%);
 }
+
+.accordion {
+    max-width: 500px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-bottom: 5px solid purple;
+}
+
+.accordion-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.accordion-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    padding-inline: 1rem;
+    transition: 250ms grid-template-rows ease;
+}
+
+.accordion:hover .accordion-body {
+    grid-template-rows: 1fr;
+}
+
+.accordion-body>div {
+    overflow: hidden;
+}

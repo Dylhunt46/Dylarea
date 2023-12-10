@@ -84,16 +84,15 @@ header {
 }
 
 .title {
-    font-size: 200px;
+    font-size: 110px;
     background: url(img/h1.jpeg);
     background-size: cover;
     background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
-
 }
+
 
 .accordion {
     width: 50%;

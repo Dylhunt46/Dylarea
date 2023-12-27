@@ -201,7 +201,7 @@ count-up:not(:defined) {
     color: purple;
     cursor: pointer;
     border-bottom: 2px solid white;
-    margin: 0 auto 250px;
+    margin: 0 auto 10px;
 }
 
 .accordion-title {
@@ -224,6 +224,101 @@ count-up:not(:defined) {
 
 .accordion-body>div {
     overflow: hidden;
+}
+
+/*Contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 75%;
+    margin: 30px auto;
+}
+
+@media screen and (min-width: 760px) {
+    form {
+        display: grid;
+        grid-template-areas:
+            "name surname company"
+            "email phone number"
+            "date time number"
+            "subject subject subject"
+            "message message message"
+            "button button button";
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+#name {
+    grid-area: name;
+}
+
+#surname {
+    grid-area: surname;
+}
+
+#company {
+    grid-area: company;
+}
+
+#email {
+    grid-area: email;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#number {
+    grid-area: number;
+}
+
+#date {
+    grid-area: date;
+}
+
+#time {
+    grid-area: time;
+}
+
+#subject {
+    grid-area: subject;
+}
+
+#message {
+    grid-area: message;
+    margin-bottom: 5px;
+}
+
+#button {
+    grid-area: button;
+}
+
+input {
+    height: 40px;
+}
+
+input,
+select,
+textarea {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 4px;
+}
+
+textarea {
+    height: 100px;
+    padding: 8px 4px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 footer {
@@ -280,7 +375,6 @@ footer p {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-
 }
 
 .social ul {
@@ -306,18 +400,15 @@ hr {
 #github {
     width: 50px;
     height: 30px;
-
 }
 
 #facebook {
     width: 38px;
     height: 38px;
-
 }
 
 .mentions {
     margin: 0 auto;
-
 }
 
 .whitespace {

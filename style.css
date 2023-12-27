@@ -83,8 +83,71 @@ header {
     transform: rotateX(90deg) translateY(-50%);
 }
 
+/* Carousel */
+
+.header_carousel {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 14px;
+}
+
+.carousel {
+    position: relative;
+    height: 30vh;
+    width: 50vw;
+}
+
+.carousel button {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.6rem;
+    z-index: 2;
+    cursor: pointer;
+    color: white;
+}
+
+#prev {
+    left: 5px;
+}
+
+#next {
+    right: 5px;
+}
+
+.slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Title */
+
 .title {
-    font-size: 110px;
+    font-size: 4rem;
     background: url(img/h1.jpeg);
     background-size: cover;
     background-position: center;

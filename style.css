@@ -13,6 +13,10 @@ a {
     color: #fff;
 }
 
+a:hover {
+    color: purple;
+}
+
 body {
     background: grey;
     margin: 0 auto;

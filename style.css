@@ -48,6 +48,104 @@ header {
     margin-bottom: 10px;
 }
 
+.new-year-container {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/2024.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.new-year-h2 {
+    height: 250px;
+    color: transparent;
+    font-size: 3rem;
+    flex-wrap: wrap;
+}
+
+.part1 {
+    margin-bottom: 140px;
+}
+
+@media screen and (min-width: 500px) {
+    .new-year-h2 {
+        height: 400px;
+        font-size: 4rem;
+    }
+
+    .new-year-container {
+        height: 400px;
+    }
+
+    .part1 {
+        margin-bottom: 250px;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    .new-year-h2 {
+        height: 800px;
+        font-size: 7rem;
+    }
+
+    .new-year-container {
+        height: 800px;
+    }
+
+    .part1 {
+        margin-bottom: 540px;
+    }
+}
+
+.new-year-h2 span {
+    animation: anim_h2 10s linear infinite;
+    animation-delay: calc(0.3s * var(--i));
+}
+
+@keyframes anim_h2 {
+    0% {
+        color: #fff;
+        filter: blur(2px) hue-rotate(0deg);
+        text-shadow: 0 0 10px purple,
+            0 0 20px purple,
+            0 0 40px purple,
+            0 0 80px purple,
+            0 0 120px purple,
+            0 0 200px purple,
+            0 0 300px purple,
+            0 0 400px purple,
+            0 0 500px purple,
+            0 0 600px purple,
+            0 0 700px purple,
+            0 0 800px purple,
+            0 0 900px purple;
+    }
+
+    30%,
+    70% {
+        color: #fff;
+        filter: blur(2px) hue-rotate(360deg);
+        text-shadow: 0 0 10px purple,
+            0 0 20px purple,
+            0 0 40px purple,
+            0 0 80px purple,
+            0 0 120px purple,
+            0 0 200px purple,
+            0 0 300px purple,
+            0 0 400px purple;
+    }
+
+    100% {
+        color: transparent;
+        box-shadow: none;
+        filter: blur(2px) hue-rotate(0deg);
+    }
+
+}
+
 .button-3D-effect {
     display: block;
     margin: 0 auto;
